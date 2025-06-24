@@ -247,7 +247,6 @@ a {
     }
 }
 
-/* === Portfolio Boxes Styles === */
 .about-box, .skills-box, .projects-box, .contact-box {
     display: flex;
     align-items: center;
@@ -333,7 +332,6 @@ a {
     margin-bottom: 6px;
 }
 
-/* Contact Form Styling */
 .contact-box form {
     display: flex;
     flex-direction: column;
@@ -383,19 +381,59 @@ a {
     }
 }
 
-/* Responsive for mobile */
-@media (max-width: 900px) {
+
+@media (max-width: 700px) {
     .about-box, .skills-box, .projects-box, .contact-box {
-        padding: 24px 0 32px 0;
-        margin: 24px 0 24px 0;
+        padding: 10px 0 18px 0;
+        margin: 12px 0 12px 0;
+        border-radius: 14px;
     }
     .section-content {
         max-width: 100%;
-        padding: 18px 8px 14px 8px;
+        padding: 10px 4px 8px 4px;
+        border-radius: 10px;
+    }
+    .about-box h2, .skills-box h2, .projects-box h2, .contact-box h2 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
     .skills-box ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
+    }
+    .skills-box li {
+        font-size: 0.95rem;
+        padding: 7px 12px;
+    }
+    .projects-box .project-item {
+        padding: 10px 8px;
+        font-size: 0.98rem;
+    }
+    .contact-box input, .contact-box textarea {
+        font-size: 0.98rem;
+        padding: 10px 8px;
+    }
+    .contact-box button {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+    .home {
+        flex-direction: column;
+        gap: 20px;
+        padding: 60px 2% 0;
+        height: auto;
+    }
+    .home-info h1 {
+        font-size: 2rem;
+    }
+    .home-info h2 {
+        font-size: 1.1rem;
+    }
+    .home-img .img-box {
+        width: 60vw;
+        height: 60vw;
+        min-width: 180px;
+        min-height: 180px;
     }
 }
 
