@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Ahmad Hassan</h1>
+            <h2>I'm a 
+                <span style="--i:3;" data-text="Graphic Designer">Graphic Designer</span>
+                <span style="--i:2;" data-text="UI/UX Designer">UI/UX Designer</span>
+                <span style="--i:1;" data-text="Frontend Developer">Frontend Developer</span>
+            </h2>
+            <p>
+                I'm a Sftware Engineering student at COMSATS University Islamabad Lahore Campus likely to be graduated in 2027.
+            </p>
+            <div class="btn-sci">
+                <a href="Resume.pdf" class="btn" download>Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/ahmad-hassan-899823354" target="_blank" rel="noopener"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="pic.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-box" id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>
+                I'm Ahmad Hassan, a Software Engineering student at COMSATS University Islamabad, passionate about building digital solutions that solve real-world problems.
+            </p>
+            <p>
+                I enjoy working with web technologies and actively exploring Data structures, Algorithms and Databases.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-box" id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Graphic Design</li>
+                <li>UI/UX Design</li>
+                <li>Frontend Development</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-box" id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Event Management System</h3>
+                <p>A course project built using java and javafx</p>
+            </div>
+            <div class="project-item">
+                <h3>RideEase (Ride hailing system)</h3>
+                <p>UI/UX design using figma</p>
+            </div>
+            <div class="project-item">
+                <h3>Movie Theatre Database Management system</h3>
+                <p>A database management system using sql server</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact-box" id="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
